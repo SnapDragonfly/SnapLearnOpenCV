@@ -1,0 +1,1 @@
+Output video file is in Resources folder
