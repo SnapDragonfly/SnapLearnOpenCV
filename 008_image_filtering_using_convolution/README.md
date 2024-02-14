@@ -32,12 +32,12 @@ To run the code in Python, please go into the `python` folder and execute the Py
 To run the code in C++, please go into the `cpp` folder, then follow the steps below:
 
 ```
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release
-cd ..
-./build/convolution
+$ mkdir build
+$ cd build
+$ cmake ..
+$ cmake --build . --config Release
+$ cd ..
+$ ./build/convolution
 ```
 
 ## Last Run and Tested
