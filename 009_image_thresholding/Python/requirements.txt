@@ -1,0 +1,4 @@
+notebook==6.2.0
+opencv-python==4.5.1.48
+matplotlib==3.3.4
+requests==2.25.1
