@@ -33,24 +33,24 @@ To run the code in Python, please go into the `python` folder and execute the Py
 
 Example, To run the code in C++, please go into the `cpp/mouse` folder, then follow the steps below:
 ```
-cd Mouse
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release
-cd ..
-./build/mouse
+$ cd Mouse
+$ mkdir build
+$ cd build
+$ cmake ..
+$ cmake --build . --config Release
+$ cd ..
+$ ./build/mouse
 ```
 
 
 ```
-cd Trackbar
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release
-cd ..
-./build/trackbar
+$ cd Trackbar
+$ mkdir build
+$ cd build
+$ cmake ..
+$ cmake --build . --config Release
+$ cd ..
+$ ./build/trackbar
 ```
 
 ## Last Run and Tested
