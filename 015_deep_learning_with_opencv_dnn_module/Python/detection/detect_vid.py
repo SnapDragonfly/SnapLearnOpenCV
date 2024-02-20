@@ -13,6 +13,9 @@ COLORS = np.random.uniform(0, 255, size=(len(class_names), 3))
 model = cv2.dnn.readNet(model='../../input/frozen_inference_graph.pb',
                         config='../../input/ssd_mobilenet_v2_coco_2018_03_29.pbtxt.txt', 
                         framework='TensorFlow')
+# use GPU for opencv
+#model.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
+#model.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 
 # capture the video
 cap = cv2.VideoCapture('../../input/video_1.mp4')
