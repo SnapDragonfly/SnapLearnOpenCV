@@ -107,6 +107,10 @@ configure () {
     local CMAKEFLAGS="
         -D BUILD_EXAMPLES=OFF
         -D BUILD_opencv_python3=ON
+        -D PYTHON_EXECUTABLE=$(which python3)
+        -D PYTHON3_INCLUDE_DIR=$(python3 -c "from distutils.sysconfig import get_python_inc; print(get_python_inc())")
+        -D PYTHON3_LIBRARY=$(python3 -c "import sysconfig; print(sysconfig.get_config_var('LIBDIR'))")
+        -D PYTHON3_PACKAGES_PATH=$(python3 -c "import site; print(site.getsitepackages()[0])")
         -D CMAKE_BUILD_TYPE=RELEASE
         -D CMAKE_INSTALL_PREFIX=${PREFIX}
         -D CUDA_ARCH_BIN=5.3,6.2,7.2,8.7
